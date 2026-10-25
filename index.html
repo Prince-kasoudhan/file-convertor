@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f8fc" />
+    <meta
+      name="description"
+      content="Convert images, PDFs and spreadsheets right in your browser. Your files stay on your device."
+    />
+    <title>Convertly — simple, private file conversions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Convertly home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M8 16h16M17 9l7 7-7 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8 9v14" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" opacity=".5" />
+          </svg>
+        </span>
+        <span>convertly<span class="brand-period">.</span></span>
+      </a>
+      <div class="privacy-note">
+        <span class="privacy-dot"></span>
+        Your files never leave your device
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="sparkle">✳</span> YOUR FILES, JUST THE WAY YOU NEED THEM</div>
+          <h1>Goodbye format<br />headaches<span class="hero-period">.</span></h1>
+          <p>Convert everyday files in a few clicks. Free, simple, and always private.</p>
+          <div class="hero-trust">
+            <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3.2 3.2L15 6.5" /></svg> No sign-up</span>
+            <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3.2 3.2L15 6.5" /></svg> 100% in your browser</span>
+            <span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3.2 3.2L15 6.5" /></svg> Free to use</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-file art-file-left"><span class="mini-icon image-mini">▧</span><span>image.jpg</span></div>
+          <div class="art-file art-file-right"><span class="mini-icon pdf-mini">PDF</span><span>document.pdf</span></div>
+          <div class="art-file art-file-bottom"><span class="mini-icon sheet-mini">▦</span><span>spreadsheet.xlsx</span></div>
+          <div class="art-center">
+            <span class="art-center-icon">↔</span>
+            <span>convert</span>
+            <span class="art-center-spark">✦</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="converter-section" aria-labelledby="converter-title">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">THE EVERYDAY ESSENTIALS</div>
+            <h2 id="converter-title">What are we converting today?</h2>
+          </div>
+          <span class="step-label"><span>01</span> Choose a conversion</span>
+        </div>
+
+        <div class="tool-grid" role="group" aria-label="Choose a conversion">
+          <button class="tool-card active" type="button" data-mode="image-pdf" aria-pressed="true">
+            <span class="tool-icon icon-image"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="6" width="22" height="20" rx="4" /><circle cx="12" cy="13" r="2.2" /><path d="m7 23 6-6 4 4 3-3 5 5" /></svg></span>
+            <span class="tool-text"><strong>Images to PDF</strong><span>JPG, PNG, WEBP</span></span>
+            <span class="tool-arrow">→</span>
+          </button>
+          <button class="tool-card" type="button" data-mode="pdf-image" aria-pressed="false">
+            <span class="tool-icon icon-pdf"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 4.5h8l6 6V26a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2Z" /><path d="M18 5v6h6M11 20h10M11 24h7" /><path d="M12 15h1.2a1.6 1.6 0 1 0 0-3.2H12V16" /></svg></span>
+            <span class="tool-text"><strong>PDF to images</strong><span>PDF to JPG pages</span></span>
+            <span class="tool-arrow">→</span>
+          </button>
+          <button class="tool-card" type="button" data-mode="excel-pdf" aria-pressed="false">
+            <span class="tool-icon icon-sheet"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="5" width="22" height="22" rx="4" /><path d="M5 12h22M5 19h22M12 5v22M20 5v22" /><path d="m8 15 2 2m0-2-2 2" /></svg></span>
+            <span class="tool-text"><strong>Excel to PDF</strong><span>XLS, XLSX, CSV</span></span>
+            <span class="tool-arrow">→</span>
+          </button>
+          <button class="tool-card" type="button" data-mode="pdf-merge" aria-pressed="false">
+            <span class="tool-icon icon-pdf"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 4.5h8l6 6V26a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2Z" /><path d="M18 5v6h6M12 18h8M16 14v8" /></svg></span>
+            <span class="tool-text"><strong>Merge PDFs</strong><span>Combine multiple PDFs</span></span>
+            <span class="tool-arrow">→</span>
+          </button>
+          <button class="tool-card" type="button" data-mode="pdf-compress" aria-pressed="false">
+            <span class="tool-icon icon-pdf"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 4.5h8l6 6V26a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2Z" /><path d="M18 5v6h6M12 17h8M12 21h5" /><path d="m20 20 2 2 2-2" /></svg></span>
+            <span class="tool-text"><strong>Compress PDFs</strong><span>Reduce size, flatten pages</span></span>
+            <span class="tool-arrow">→</span>
+          </button>
+          <button class="tool-card" type="button" data-mode="word-pdf" aria-pressed="false">
+            <span class="tool-icon icon-sheet"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 4.5h8l6 6V26a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2Z" /><path d="M18 5v6h6M12 16l2 7 2-5 2 5 2-7" /></svg></span>
+            <span class="tool-text"><strong>Word to PDF</strong><span>DOCX documents</span></span>
+            <span class="tool-arrow">→</span>
+          </button>
+        </div>
+
+        <div class="workspace">
+          <div class="workspace-top">
+            <div class="workspace-label">
+              <span class="step-number">02</span>
+              <div><strong id="upload-title">Add your images</strong><span id="upload-subtitle">Drop files here or browse your device</span></div>
+            </div>
+            <button class="text-button" id="clear-button" type="button" hidden>Clear all</button>
+          </div>
+
+          <div class="drop-zone" id="drop-zone" tabindex="0" role="button" aria-label="Choose files to convert">
+            <input id="file-input" type="file" hidden multiple accept="image/jpeg,image/png,image/webp" />
+            <div class="upload-illustration">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 31V11m0 0-8 8m8-8 8 8" /><path d="M13 28v9a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2v-9" /></svg>
+            </div>
+            <strong>Drop your files here</strong>
+            <span>or <button class="browse-button" id="browse-button" type="button">browse files</button> from your device</span>
+            <small id="file-hint">JPG, PNG or WEBP · Up to 50 MB per file</small>
+          </div>
+
+          <div class="file-list" id="file-list" aria-live="polite"></div>
+
+          <div class="options-row" id="options-row">
+            <label class="option-control" id="page-size-control">
+              <span>Page size</span>
+              <select id="page-size">
+                <option value="a4">A4</option>
+                <option value="letter">US Letter</option>
+              </select>
+            </label>
+            <label class="option-control" id="fit-control">
+              <span>Image fit</span>
+              <select id="image-fit">
+                <option value="contain">Fit to page</option>
+                <option value="cover">Fill page</option>
+              </select>
+            </label>
+            <label class="option-control" id="image-size-control" hidden>
+              <span>Max image size</span>
+              <select id="image-size">
+                <option value="original">Original</option>
+                <option value="2400">2400 px</option>
+                <option value="1600" selected>1600 px</option>
+                <option value="1200">1200 px</option>
+              </select>
+            </label>
+            <label class="option-control" id="image-quality-control" hidden>
+              <span>JPEG quality</span>
+              <select id="image-quality">
+                <option value="0.95">High</option>
+                <option value="0.82" selected>Balanced</option>
+                <option value="0.65">Smaller</option>
+              </select>
+            </label>
+            <label class="option-control" id="compression-control" hidden>
+              <span>Compression</span>
+              <select id="compression-level">
+                <option value="balanced">Balanced</option>
+                <option value="small">Smallest file</option>
+              </select>
+            </label>
+            <div class="options-spacer"></div>
+            <button class="convert-button" id="convert-button" type="button" disabled>
+              <span id="convert-label">Convert to PDF</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" /></svg>
+            </button>
+          </div>
+          <p class="status-message" id="status-message" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="how-section" aria-label="How it works">
+        <div class="how-item"><span class="how-number">01</span><div><strong>Pick a conversion</strong><p>Choose the format you need.</p></div></div>
+        <span class="how-line"></span>
+        <div class="how-item"><span class="how-number">02</span><div><strong>Add your files</strong><p>Drag, drop, or browse locally.</p></div></div>
+        <span class="how-line"></span>
+        <div class="how-item"><span class="how-number">03</span><div><strong>Download &amp; done</strong><p>Your new files are ready.</p></div></div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 16h16M17 9l7 7-7 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" /><path d="M8 9v14" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" opacity=".5" /></svg></span><span>convertly<span class="brand-period">.</span></span></a>
+      <span>Made for the little file problems.</span>
+      <span class="footer-privacy"><span class="privacy-dot"></span> Files are processed on your device</span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
